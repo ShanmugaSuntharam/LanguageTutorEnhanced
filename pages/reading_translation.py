@@ -1,8 +1,16 @@
 import streamlit as st
 import openai
 import config
+#import os
+
 from openai import OpenAI
-client = OpenAI(api_key=config.API_KEY)
+
+API_KEY = st.secrets["API_KEY"]
+#API_KEY = os.environ.get("OPENAI_API_KEY")
+
+client = OpenAI(api_key = API_KEY)
+
+#client = OpenAI(api_key=config.API_KEY)
 
 
 def generate_random_sentence():
@@ -10,7 +18,7 @@ def generate_random_sentence():
     completion = client.chat.completions.create(
       model="gpt-3.5-turbo",
       messages=[
-      {"role": "system", "content": "You are a language teacher. your job is to generate a long sentence in Hindi"},
+      {"role": "system", "content": "You are a language teacher. your job is to generate a long sentence in Tamil"},
       {"role": "user", "content": " Please generate a long sentence in hindi"}
       ]
     )

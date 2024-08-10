@@ -7,10 +7,16 @@ from scipy.io.wavfile import write
 import wave
 import openai
 import config
+#import os
+
 from openai import OpenAI
-client = OpenAI(api_key=config.API_KEY)
 
+API_KEY = st.secrets["API_KEY"]
+#API_KEY = os.environ.get("OPENAI_API_KEY")
 
+client = OpenAI(api_key = API_KEY)
+
+#client = OpenAI(api_key=config.API_KEY)
 
 def speech_to_text(file_path):
     audio_file= open(file_path, "rb")
