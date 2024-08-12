@@ -31,7 +31,7 @@ def app():
     )
     st.text("Click to record 10 seconds")
     if fixed_audio_bytes:
-        #st.audio(fixed_audio_bytes, format="audio/wav")
+        st.audio(fixed_audio_bytes, format="audio/wav")
     
         sample_rate = 44100  # Sample rate in Hz
 
