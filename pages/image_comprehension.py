@@ -6,7 +6,7 @@ import io
 from scipy.io.wavfile import write
 import wave
 import openai
-import config
+#import config
 #import os
 
 from openai import OpenAI
