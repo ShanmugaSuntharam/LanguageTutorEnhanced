@@ -99,7 +99,7 @@ def app():
         st.image(st.session_state.image_url, caption='Describe this image.')
         st.subheader('You have to describe and talk about what you see in the image. Take yur time look and analyse the image think about what you want to say and then start.\n You will have 30 seconds to speak about it. Focus on rich decription fluid speech.')
 
-        if st.button('Start Talking'):
+        if True: #st.button('Start Talking'):
             st.session_state.recording_started = True
             duration = 30  # seconds
             sample_rate = 44100  # Sample rate
