@@ -18,7 +18,7 @@ def generate_random_sentence():
     completion = client.chat.completions.create(
       model="gpt-3.5-turbo",
       messages=[
-      {"role": "system", "content": "You are a language teacher. your job is to generate a long sentence in Tamil"},
+      {"role": "system", "content": "You are a language teacher. your job is to generate a long sentence in Hindi"},
       {"role": "user", "content": " Please generate a long sentence in hindi"}
       ]
     )
