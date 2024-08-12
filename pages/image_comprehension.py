@@ -106,7 +106,6 @@ def app():
             myrecording = audio_recorder(energy_threshold=(-1.0, 1.0),
                                          pause_threshold=30.0,
                                          key="fixed",
-					 auto_start=True
                                          )
             #st.write('Recording started... speak now!')
             #myrecording = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=1, dtype='int16')
