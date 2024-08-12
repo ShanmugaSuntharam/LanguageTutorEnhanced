@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 import numpy as np
-import sounddevice as sd
+#import sounddevice as sd
 import io
 from scipy.io.wavfile import write
 import wave
