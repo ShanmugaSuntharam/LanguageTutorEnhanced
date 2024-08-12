@@ -123,7 +123,7 @@ def app():
                         wf.setnchannels(2)  # Stereo
                         wf.setsampwidth(2)  # Sample width in bytes
                         wf.setframerate(sample_rate)
-                        wf.writeframes(myrecording.tobytes())
+                        wf.writeframes(myrecording)
 
                     print(f"Audio saved to {output_file}")
                     user_description = speech_to_text("output2.wav")
