@@ -1,6 +1,6 @@
 import streamlit as st
 import openai
-import config
+#import config
 #import os
 
 from openai import OpenAI
